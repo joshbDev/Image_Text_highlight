@@ -1,11 +1,13 @@
 $(document).ready(function() {
 	$('.photopopup').on('mouseenter', function(){
-	$(this).find('span').animate({
-		fontSize:"2.2em",
-		lineHeight: '50px',
+	$(this).find('.darkline').animate({
+	bottom:'80px',
+	height:'80px',
 		});
+	$(this).find('#secondtext').slideDown();
 	});
 $('.photopopup').on('mouseout', function(){
-$(this).find('span').animate({fontSize:"2em"});
+$(this).find('.darkline').animate({height:'50px', bottom:'50px'});
+$(this).find('#secondtext').slideUp();
 });
 });
