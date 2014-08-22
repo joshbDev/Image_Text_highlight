@@ -1,13 +1,15 @@
 $(document).ready(function() {
-	$('.photopopup').on('mouseenter', function(){
+	$('.photopopup').on('mouseover', function(){
 	$(this).find('.darkline').animate({
 	bottom:'80px',
 	height:'80px',
-		});
-	$(this).find('#secondtext').slideDown();
+		},{"queue": false});
+	$(this).find('#secondtext').animate({bottom:'15px'},{"queue": false});
+	$(this).find('#secondtext').slideDown(300);
 	});
-$('.photopopup').on('mouseout', function(){
-$(this).find('.darkline').animate({height:'50px', bottom:'50px'});
-$(this).find('#secondtext').slideUp();
+$('.photopopup').on('mouseleave', function(){
+$(this).find('.darkline').animate({height:'50px', bottom:'50px'},{"queue": false});
+$(this).find('#secondtext').animate({bottom:'0px'},{"queue": false})
+$(this).find('#secondtext').slideUp(300);
 });
 });

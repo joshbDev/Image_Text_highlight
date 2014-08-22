@@ -1,6 +1,7 @@
 .photopopup{
 	width:240px;
 	height:180px;
+	    cursor:pointer;
 }
 .darkline {
 background-color: rgba(0,0,0,.8);
@@ -9,7 +10,6 @@ width: 240px;
 position: relative;
 bottom: 50;
 }
-
 .photopopup span{
 	position: relative;
 	bottom: 0px;
@@ -19,6 +19,6 @@ bottom: 50;
 }
 #secondtext{
 position: absolute;
-bottom:10px;
-color: #005fae;
+bottom:0px;
+color: #fff;
 }
