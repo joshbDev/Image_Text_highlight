@@ -1,0 +1,54 @@
+/* --- CAROUSEL  --- */
+#carousel_inner {
+float:left; /* important for inline positioning */
+width:1000px; /* important (this width = width of list item(including margin) * items shown */
+overflow: hidden;  /* important (hide the items outside the div) */
+/* non-important styling bellow */
+background: #F0F0F0;
+overflow:hidden
+}
+
+#carousel_ul {
+position:relative;
+left: -270px;
+list-style: none outside none;
+position: relative;
+display: inline-flex;
+overflow: hidden;
+width:9999px; /* important */
+/* non-important styling bellow */
+}
+
+#carousel_ul li{
+float: left; /* important for inline positioning of the list items */
+width:250px;  /* fixed width, important */
+/* just styling bellow*/
+padding:0px;
+height:250px;
+background: #000000;
+}
+
+#carousel_ul li img {
+cursor:pointer;
+cursor: hand;
+border:0px;
+}
+#left_scroll{
+position: absolute;
+margin-top: 105px;
+margin-left: -35px;
+font-size: 1.8em;
+left: 0px;
+}
+#right_scroll{
+    position: absolute;
+margin-top: 110px;
+margin-left: 1002px;
+font-size: 1.7em;
+left: 0px;}
+#left_scroll, #right_scroll {
+/*styling*/
+cursor: pointer;
+cursor: hand;
+overflow:hidden;
+}
